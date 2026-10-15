@@ -1,0 +1,504 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:
+        radial-gradient(ellipse at top left, #312e81 0%, transparent 45%),
+        radial-gradient(ellipse at bottom right, #164e63 0%, transparent 45%),
+        #080d1c;
+    color: #f1f5f9;
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    width: 100%;
+    height: 80px;
+    background: rgba(15, 23, 42, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    border-bottom: 1px solid #273454;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logo h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #f8fafc;
+}
+
+.logo span {
+    color: #22d3ee;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.status {
+    background: rgba(16, 185, 129, 0.12);
+    color: #34d399;
+    padding: 9px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.2);
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+    width: 86%;
+    max-width: 1250px;
+    margin: 45px auto;
+}
+
+/* ================= WELCOME ================= */
+
+.welcome {
+    background: linear-gradient(120deg, #171538, #312e81, #155e75);
+    border: 1px solid rgba(129, 140, 248, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 45px rgba(49, 46, 129, 0.2);
+}
+
+.small-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #67e8f9;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.welcome h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.welcome p {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.welcome-icon {
+    width: 100px;
+    height: 100px;
+    background: rgba(34, 211, 238, 0.08);
+    border: 1px solid rgba(34, 211, 238, 0.2);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.08);
+}
+
+/* ================= CARDS ================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: linear-gradient(145deg, #151e35, #11182b);
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #273454;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #6366f1;
+    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.15);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+.purple {
+    background: rgba(139, 92, 246, 0.15);
+}
+
+.blue {
+    background: rgba(56, 189, 248, 0.15);
+}
+
+.green {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.card h2 {
+    color: #f8fafc;
+    font-size: 27px;
+}
+
+/* ================= SECTIONS ================= */
+
+.form-section,
+.table-section {
+    background: linear-gradient(145deg, #131c31, #101729);
+    border-radius: 18px;
+    margin-bottom: 30px;
+    border: 1px solid #273454;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.section-heading {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #273149;
+}
+
+.section-heading h2 {
+    font-size: 19px;
+    color: #f8fafc;
+    margin-bottom: 7px;
+}
+
+.section-heading p {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.badge {
+    background: rgba(99, 102, 241, 0.15);
+    color: #a5b4fc;
+    padding: 9px 13px;
+    border-radius: 7px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border: 1px solid rgba(129, 140, 248, 0.15);
+}
+
+/* ================= FORM ================= */
+
+.form-content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #cbd5e1;
+}
+
+.input-group input {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid #334155;
+    border-radius: 9px;
+    outline: none;
+    background: #0b1222;
+    color: #f8fafc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    background: #111b30;
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.08);
+}
+
+.input-group input::placeholder {
+    color: #64748b;
+}
+
+/* ================= FORM FOOTER ================= */
+
+.form-footer {
+    padding: 20px 30px;
+    background: rgba(8, 13, 28, 0.5);
+    border-top: 1px solid #273149;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-footer p {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+#btns button {
+    background: linear-gradient(135deg, #0891b2, #4f46e5);
+    color: white;
+    border: 1px solid rgba(103, 232, 249, 0.15);
+    padding: 14px 28px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(8, 145, 178, 0.15);
+}
+
+#btns button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #06b6d4, #6366f1);
+    box-shadow: 0 8px 25px rgba(34, 211, 238, 0.2);
+}
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 25px 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background: #1b2742;
+}
+
+thead th {
+    padding: 18px 20px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #67e8f9;
+    font-weight: 800;
+}
+
+thead th:first-child {
+    border-radius: 9px 0 0 9px;
+}
+
+thead th:last-child {
+    border-radius: 0 9px 9px 0;
+}
+
+tbody tr {
+    border-bottom: 1px solid #273149;
+    transition: 0.3s;
+}
+
+tbody tr:hover {
+    background: rgba(99, 102, 241, 0.07);
+}
+
+tbody th {
+    padding: 19px 20px;
+    font-size: 14px;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+tbody th:first-child {
+    color: #22d3ee;
+    font-weight: 800;
+}
+
+/* ================= TABLE BUTTONS ================= */
+
+tbody button {
+    border: none;
+    padding: 9px 17px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Edit Button */
+
+tbody th:nth-child(5) button {
+    background: rgba(99, 102, 241, 0.15);
+    color: #a5b4fc;
+    border: 1px solid rgba(129, 140, 248, 0.2);
+}
+
+tbody th:nth-child(5) button:hover {
+    background: #6366f1;
+    color: white;
+}
+
+/* Delete Button */
+
+tbody th:nth-child(6) button {
+    background: rgba(239, 68, 68, 0.12);
+    color: #fca5a5;
+    border: 1px solid rgba(248, 113, 113, 0.15);
+}
+
+tbody th:nth-child(6) button:hover {
+    background: #ef4444;
+    color: white;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: rgba(15, 23, 42, 0.85);
+    border-top: 1px solid #273454;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .status {
+        display: none;
+    }
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .welcome {
+        padding: 25px;
+    }
+
+    .welcome h1 {
+        font-size: 23px;
+    }
+
+    .welcome-icon {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .section-heading {
+        padding: 20px;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .form-footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    #btns button {
+        width: 100%;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Dashboard</title>
+    <link rel="stylesheet" href="end.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h2>🎓 Student<span>Hub</span></h2>
+        </div>
+
+        <div class="header-right">
+            <span class="status">● System Online</span>
+            <div class="avatar">AD</div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container">
+
+        <!-- Welcome -->
+        <div class="welcome">
+            <div>
+                <p class="small-title">STUDENT MANAGEMENT SYSTEM</p>
+                <h1>Students Dashboard</h1>
+                <p>Manage your students easily — add, edit and delete records.</p>
+            </div>
+
+            <div class="welcome-icon">🎓</div>
+        </div>
+
+        <!-- Information Cards -->
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-icon purple">👨‍🎓</div>
+                <div>
+                    <p>Total Students</p>
+                    <h2>04</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon blue">📚</div>
+                <div>
+                    <p>Departments</p>
+                    <h2>02</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon green">✓</div>
+                <div>
+                    <p>System Status</p>
+                    <h2>Active</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Add Student -->
+        <section class="form-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>✦ Student Information</h2>
+                    <p>Fill in the fields below to manage student records.</p>
+                </div>
+
+                <span class="badge">MANAGEMENT</span>
+            </div>
+
+            <div class="form-content">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Enter student name">
+                </div>
+
+                <div class="input-group">
+                    <label>Age</label>
+                    <input type="text" id="age" placeholder="Enter student age">
+                </div>
+
+                <div class="input-group">
+                    <label>Job</label>
+                    <input type="text" id="job" placeholder="Enter student job">
+                </div>
+
+            </div>
+
+            <div class="form-footer">
+                <p>✦ All fields are required</p>
+
+                <div id="btns">
+                    <button onclick="add()">+ Add Student</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Students Table -->
+        <section class="table-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Students Records</h2>
+                    <p>View and manage all registered students.</p>
+                </div>
+
+                <span class="badge">ALL RECORDS</span>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>AGE</th>
+                            <th>JOB</th>
+                            <th>EDIT</th>
+                            <th>DELETE</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbl">
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 StudentHub. All rights reserved.</p>
+        <p>Student Management Dashboard ✦</p>
+    </footer>
+
+    <script src="end.js"></script>
+</body>
+</html>
